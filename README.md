@@ -57,7 +57,7 @@ type AirlineInfo {
 
 #### Handler
 
-http://query-country-airline-info/info
+http://hasura-extensions/query/country/airline-info
 
 ### Country News: Action Definition
 
@@ -91,7 +91,7 @@ type NewsItem {
 
 #### Handler
 
-http://query-country-news/items
+http://hasura-extensions/query/country/news
 
 ### Country Travel Information: Action Definition
 
@@ -118,7 +118,7 @@ type TravelInfo {
 
 #### Handler
 
-http://query-country-travel-info/info
+http://hasura-extensions/query/country/travel-info
 
 ### Johns Hopkins Data Refresh: Cron Trigger Event Definition
 
@@ -152,7 +152,7 @@ refresh-owid-data
 
 #### Webhook
 
-http://refresh-owid-data/refresh
+http://hasura-extensions/refresh/owid
 
 #### Cron Schedule
 
@@ -176,7 +176,7 @@ refresh-population-counts
 
 #### Webhook
 
-http://refresh-population-counts/refresh
+http://hasura-extensions/refresh/pops
 
 #### Cron Schedule
 
@@ -200,7 +200,7 @@ refresh-test-counts
 
 #### Webhook
 
-http://refresh-test-counts/refresh
+http://hasura-extensions/refresh/tests
 
 #### Cron Schedule
 
