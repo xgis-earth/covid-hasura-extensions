@@ -1,0 +1,18 @@
+kind: pipeline
+type: docker
+name: default
+
+steps:
+  - name: publish
+    image: plugins/docker
+    settings:
+      repo: xgis/covid-hasura-extensions
+      tags: [ "${DRONE_COMMIT_SHA:0:7}", "latest" ]
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+
+trigger:
+  branch:
+  - main

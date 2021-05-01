@@ -1,0 +1,5 @@
+fastapi==0.61.2
+psycopg2-binary==2.8.6
+markdownify==0.6.0
+requests==2.25.1
+uvicorn==0.12.3
